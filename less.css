@@ -58,7 +58,6 @@ html {
 html body {
   font-family: Arial, sans-serif !important;
   height: 100%;
-  overflow: auto;
   color: #999;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -66,6 +65,7 @@ html body {
   user-select: none;
 }
 html body .bodyWrap #page1 {
+  overflow: auto;
   padding-bottom: 50px;
 }
 html body .bodyWrap #page1 .swiper_head {
@@ -90,6 +90,7 @@ html body .bodyWrap #page1 .content[data-fixed="fixed"] {
   margin-top: 200px;
 }
 html body .bodyWrap #page1 .bottomBuy {
+  -webkit-transform: translate3d(0, 0, 0);
   cursor: pointer;
   position: fixed;
   bottom: 0;
@@ -131,6 +132,7 @@ html body .bodyWrap #page1 #tabBar > span + span {
 }
 html body .bodyWrap #page1 #tabBar[data-fixed="fixed"] {
   position: fixed;
+  -webkit-transform: translate3d(0, 0, 0);
   width: 100%;
   left: 50%;
   top: 0;
@@ -482,6 +484,7 @@ html body .bodyWrap #page2 .page2Wrap .total .right span {
 html body .bodyWrap #page2 .page2Wrap .next {
   cursor: pointer;
   position: fixed;
+  -webkit-transform: translate3d(0, 0, 0);
   bottom: 0;
   padding: 3px;
   left: 50%;
@@ -658,6 +661,7 @@ html body .bodyWrap #page3 .page3Wrap .list-block .item-content:after {
 html body .bodyWrap #page3 .page3Wrap .confirm {
   cursor: pointer;
   position: fixed;
+  -webkit-transform: translate3d(0, 0, 0);
   bottom: 0;
   padding: 3px;
   left: 50%;
