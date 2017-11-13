@@ -1,6 +1,20 @@
 /**
  * Created by chiusin on 2017/11/10.
  */
+/**
+ *  获取url上的query参数值
+ * @param data
+ * @param url
+ * @returns {*}
+ */
+ function getQueryString (data, url) {
+    var regex = new RegExp('(^|&)' + data + '=([^&]*)(&|$)', 'i'), query = url.toString().split('?')[1];
+    if (query) {
+        var match = query.match(regex);
+        return match && decodeURIComponent(match[2]);
+    }
+    return null;
+}
 
 
 /**
@@ -26,7 +40,7 @@ function affix(affixId, bottomId) {
     var BottomObj = document.getElementById(bottomId);
         var ot = obj.offsetTop;
     console.log(ot);
-    document.addEventListener("scroll", function () {
+    $(document).on("scroll", function () {
         var st = scroll().top;
         obj.setAttribute("data-fixed", st >= ot ? "fixed" : "");
         BottomObj.setAttribute("data-fixed", st >= ot ? "fixed" : "");
@@ -51,12 +65,12 @@ function elevatorTab(tabId, contentId, heightGap) {
     for (var i = 0; i < lisOl.length; i++) {
         //添加索引自定义属性
         lisOl[i].index = i;
-        window.addEventListener("scroll", function () {
+        $(window).on("scroll", function () {
             var scrl = scroll();
             leader = scrl.top;
         })
         //添加点击事件
-        lisOl[i].addEventListener("click", function (event) {
+        $(lisOl[i]).on("click", function (event) {
             event.preventDefault();
 
             clearInterval(timer);

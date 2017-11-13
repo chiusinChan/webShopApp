@@ -205,7 +205,7 @@ html body .bodyWrap #page1 .aboutMoney .soldAndReturn .sold > m {
   font-size: 16px;
 }
 html body .bodyWrap #page1 .aboutMoney .soldAndReturn .sold > span {
-  width: 120px;
+  width: 100px;
   height: 4px;
   border: 1px solid #f00;
   display: block;
@@ -213,7 +213,7 @@ html body .bodyWrap #page1 .aboutMoney .soldAndReturn .sold > span {
   margin: 7px;
 }
 html body .bodyWrap #page1 .aboutMoney .soldAndReturn .sold > span > span {
-  width: 115px;
+  width: 95px;
   height: 4px;
   background: #f00;
   display: block;
