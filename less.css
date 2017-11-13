@@ -42,6 +42,14 @@ div {
   #page4 .title p {
     font-size: 14px !important;
   }
+  .bottomBuy,
+  .next,
+  .confirm,
+  #tabBar[data-fixed="fixed"] {
+    left: 0 !important;
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+  }
 }
 html,
 body {

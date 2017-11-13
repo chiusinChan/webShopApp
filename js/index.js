@@ -20,15 +20,15 @@ $(function () {
        else if(hashNow=="#buy"){
            $("#page1").hide();
            $("#page2").hide();
-           $("#page4").show();
-           $("#page3").hide();
+           $("#page3").show();
+           $("#page4").hide();
 
        }
        else if(hashNow=="#success"){
            $("#page1").hide();
            $("#page2").hide();
-           $("#page4").hide();
-           $("#page3").show();
+           $("#page3").hide();
+           $("#page4").show();
 
        }
 
