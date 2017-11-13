@@ -1,0 +1,17 @@
+{
+  "name": "webshopapp",
+  "version": "1.0.0",
+  "description": "webapp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "chiusinchan",
+  "license": "MIT",
+  "dependencies": {
+    "amfe-flexible": "^2.2.1",
+    "jquery": "^3.2.1",
+    "less": "^2.7.3",
+    "swiper": "^3.4.2"
+  }
+}
