@@ -72,6 +72,14 @@ html body {
   -ms-user-select: none;
   user-select: none;
 }
+html body .layerTips {
+  color: #fff;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+html body .layerTips .layui-layer-content {
+  color: #fff;
+}
 html body .bodyWrap #page1 {
   overflow: auto;
   padding-bottom: 50px;

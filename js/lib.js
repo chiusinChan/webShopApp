@@ -138,4 +138,38 @@ function countTimeChange(hourId, minId, secId, time) {
     }, 1000)
 
 }
+function regForm() {
+    if(!$("#form_name").val().trim()){
+        layer.msg('Please enter your full Name', {
+            offset: 't',
+            anim: 6,
+            skin:"layerTips"
+        });
+        return false;
+    }
+    if(!$("#form_mobile").val().trim()){
+        layer.msg('Please enter your number', {
+            offset: 't',
+            anim: 6
+        });
+        return false;
+    }
+    if(!$("#form_address").val().trim()){
+        layer.msg('Please enter your address', {
+            offset: 't',
+            anim: 6
+        });
+        return false;
+    }
+    if(!$("#form_post_code").val().trim()){
+        layer.msg('Please enter your postcode', {
+            offset: 't',
+            anim: 6
+        });
+        return false;
+    }
+    return true;
+
+
+}
 
