@@ -149,6 +149,7 @@ $(function () {
         $("#page2").show();
         $("#page3").hide();
         $("#page4").hide();
+
     })
     //下一步NEXT
     $("#page2 .next").on("click", function () {
@@ -161,13 +162,19 @@ $(function () {
     })
     //下一步confirm
     $("#page3 .confirm").on("click", function () {
-        window.location.hash = "success";
-        $("#page4 #price4").text($("#page3 #price3").html());
-        $("#page1").hide();
-        $("#page2").hide();
-        $("#page3").hide();
-        $("#page4").show();
+        if(regForm()){
+            window.location.hash = "success";
+            $("#page4 #price4").text($("#page3 #price3").html());
+            $("#page1").hide();
+            $("#page2").hide();
+            $("#page3").hide();
+            $("#page4").show();
+
+        }
     })
+
+
+
 
 
 })
