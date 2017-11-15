@@ -408,22 +408,49 @@ html body .bodyWrap #page2 .page2Wrap .picTitle .right > p.goodName {
 }
 html body .bodyWrap #page2 .page2Wrap .returnAndDelivery {
   overflow: hidden;
-  margin-top: 10px;
   border-bottom: 1px solid #dcdcdc;
-}
-html body .bodyWrap #page2 .page2Wrap .returnAndDelivery .return {
-  float: left;
-  color: #0894ec;
-}
-html body .bodyWrap #page2 .page2Wrap .returnAndDelivery .delivery {
-  color: #0894ec;
-  float: right;
 }
 html body .bodyWrap #page2 .page2Wrap .returnAndDelivery > div {
   margin-top: 50px;
   text-indent: 0.5em;
   margin-bottom: 5px;
   font-size: 20px;
+}
+html body .bodyWrap #page2 .page2Wrap .returnAndDelivery .card-footer {
+  padding: 0 12px;
+  min-height: 44px;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+}
+html body .bodyWrap #page2 .page2Wrap .returnAndDelivery .card-footer :before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: auto;
+  right: auto;
+  height: 1px;
+  width: 100%;
+  display: block;
+  z-index: 15;
+  transform-origin: 50% 0;
+}
+html body .bodyWrap #page2 .page2Wrap .returnAndDelivery .card-footer a.link {
+  color: #0894ec;
+  line-height: 44px;
+  height: 44px;
+  text-decoration: none;
+  display: flex;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  align-items: center;
+  transition-duration: .3s;
 }
 html body .bodyWrap #page2 .page2Wrap .selectColorFir,
 html body .bodyWrap #page2 .page2Wrap .selectColorSec {

@@ -150,21 +150,24 @@ function regForm() {
     if(!$("#form_mobile").val().trim()){
         layer.msg('Please enter your number', {
             offset: 't',
-            anim: 6
+            anim: 6,
+            skin:"layerTips"
         });
         return false;
     }
     if(!$("#form_address").val().trim()){
         layer.msg('Please enter your address', {
             offset: 't',
-            anim: 6
+            anim: 6,
+            skin:"layerTips"
         });
         return false;
     }
     if(!$("#form_post_code").val().trim()){
         layer.msg('Please enter your postcode', {
             offset: 't',
-            anim: 6
+            anim: 6,
+            skin:"layerTips"
         });
         return false;
     }
