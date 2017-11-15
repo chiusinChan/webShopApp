@@ -199,6 +199,9 @@ html {
             }
           }
           .timeCount {
+            >div{
+              float: left;
+            }
             > span {
               font-size: 14px;
               float: right;
@@ -398,19 +401,20 @@ html {
           width: 100%;
           top: 60px;
           bottom: 50px;
+          overflow: auto;
           .picTitle{
             border-bottom: 1px solid #dcdcdc;
             margin-top: 10px;
             position: relative;
-            height:120px;
+            height:170px;
             .left{
               height: 100%;
               float: left;
-              width: 110px;
+              width: 160px;
 
               img{
-                width: 100px;
-                height: 100px;
+                width: 150px;
+                height: 150px;
                 position: absolute;
                 top:50%;
                 transform:translateY(-50%);
@@ -466,10 +470,12 @@ html {
               font-size: 20px;
             }
           }
-          .selectColor{
+
+          .selectColorFir,.selectColorSec {
             padding: 15px;
             padding-bottom: 5px;
-            border-bottom: 1px solid #dcdcdc;
+            border-bottom: none;
+
             ul{
               width: 100%;
               overflow: hidden;
@@ -479,7 +485,11 @@ html {
                 float: left;
                 cursor: pointer;
                 margin-left:25px;
+                background-color: #dcdcdc;
                 padding: 3px;
+                color: #000;
+                border-radius: 3px;
+
 
               }
               li.selectedColor{
@@ -488,6 +498,27 @@ html {
                 border-radius: 3px;
               }
             }
+            >div {
+              overflow: hidden;
+              .left {
+                float: left;
+                font-size: 20px;
+                line-height: 32px;
+                margin-top: 3px;
+
+              }
+            }
+
+          }
+          .bottomLine{
+            border-bottom: 1px solid #dcdcdc;
+
+          }
+          .qty {
+            padding: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #dcdcdc;
+
             >div{
               overflow: hidden;
               .left{
@@ -524,12 +555,12 @@ html {
                 }
                 .dec{
                   border-radius: 3px 0 0 3px;
-                  
+
                 }
                 .plus{
                   border-radius: 0 3px 3px 0;
                 }
-                
+
               }
 
 
@@ -854,6 +885,7 @@ html {
       }
 
     }
+
 
   }
 }

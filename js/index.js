@@ -143,6 +143,9 @@ $(function () {
         $("#page2 .priceAndColor.color").text($(this).html());
         $(".picTitle img").attr("src", $(this).attr("data-src"))
     })
+
+
+
     $("#page1 .bottomBuy").on("click", function () {
         window.location.hash = "cart";
         $("#page1").hide();

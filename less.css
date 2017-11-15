@@ -182,6 +182,9 @@ html body .bodyWrap #page1 .aboutMoney .MoneyBar .comment {
   background-color: red;
   border-radius: 3px;
 }
+html body .bodyWrap #page1 .aboutMoney .timeCount > div {
+  float: left;
+}
 html body .bodyWrap #page1 .aboutMoney .timeCount > span {
   font-size: 14px;
   float: right;
@@ -349,21 +352,22 @@ html body .bodyWrap #page2 .page2Wrap {
   width: 100%;
   top: 60px;
   bottom: 50px;
+  overflow: auto;
 }
 html body .bodyWrap #page2 .page2Wrap .picTitle {
   border-bottom: 1px solid #dcdcdc;
   margin-top: 10px;
   position: relative;
-  height: 120px;
+  height: 170px;
 }
 html body .bodyWrap #page2 .page2Wrap .picTitle .left {
   height: 100%;
   float: left;
-  width: 110px;
+  width: 160px;
 }
 html body .bodyWrap #page2 .page2Wrap .picTitle .left img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -413,42 +417,68 @@ html body .bodyWrap #page2 .page2Wrap .returnAndDelivery > div {
   margin-bottom: 5px;
   font-size: 20px;
 }
-html body .bodyWrap #page2 .page2Wrap .selectColor {
+html body .bodyWrap #page2 .page2Wrap .selectColorFir,
+html body .bodyWrap #page2 .page2Wrap .selectColorSec {
   padding: 15px;
   padding-bottom: 5px;
-  border-bottom: 1px solid #dcdcdc;
+  border-bottom: none;
 }
-html body .bodyWrap #page2 .page2Wrap .selectColor ul {
+html body .bodyWrap #page2 .page2Wrap .selectColorFir ul,
+html body .bodyWrap #page2 .page2Wrap .selectColorSec ul {
   width: 100%;
   overflow: hidden;
   margin-bottom: 60px;
 }
-html body .bodyWrap #page2 .page2Wrap .selectColor ul li {
+html body .bodyWrap #page2 .page2Wrap .selectColorFir ul li,
+html body .bodyWrap #page2 .page2Wrap .selectColorSec ul li {
   font-size: 18px;
   float: left;
   cursor: pointer;
   margin-left: 25px;
+  background-color: #dcdcdc;
   padding: 3px;
+  color: #000;
+  border-radius: 3px;
 }
-html body .bodyWrap #page2 .page2Wrap .selectColor ul li.selectedColor {
+html body .bodyWrap #page2 .page2Wrap .selectColorFir ul li.selectedColor,
+html body .bodyWrap #page2 .page2Wrap .selectColorSec ul li.selectedColor {
   background-color: red;
   color: #fff;
   border-radius: 3px;
 }
-html body .bodyWrap #page2 .page2Wrap .selectColor > div {
+html body .bodyWrap #page2 .page2Wrap .selectColorFir > div,
+html body .bodyWrap #page2 .page2Wrap .selectColorSec > div {
   overflow: hidden;
 }
-html body .bodyWrap #page2 .page2Wrap .selectColor > div .left {
+html body .bodyWrap #page2 .page2Wrap .selectColorFir > div .left,
+html body .bodyWrap #page2 .page2Wrap .selectColorSec > div .left {
   float: left;
   font-size: 20px;
   line-height: 32px;
   margin-top: 3px;
 }
-html body .bodyWrap #page2 .page2Wrap .selectColor > div .right {
+html body .bodyWrap #page2 .page2Wrap .bottomLine {
+  border-bottom: 1px solid #dcdcdc;
+}
+html body .bodyWrap #page2 .page2Wrap .qty {
+  padding: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #dcdcdc;
+}
+html body .bodyWrap #page2 .page2Wrap .qty > div {
+  overflow: hidden;
+}
+html body .bodyWrap #page2 .page2Wrap .qty > div .left {
+  float: left;
+  font-size: 20px;
+  line-height: 32px;
+  margin-top: 3px;
+}
+html body .bodyWrap #page2 .page2Wrap .qty > div .right {
   float: right;
 }
-html body .bodyWrap #page2 .page2Wrap .selectColor > div .right > span,
-html body .bodyWrap #page2 .page2Wrap .selectColor > div .right input {
+html body .bodyWrap #page2 .page2Wrap .qty > div .right > span,
+html body .bodyWrap #page2 .page2Wrap .qty > div .right input {
   float: left;
   text-align: center;
   background-color: #f9f9f9;
@@ -459,19 +489,19 @@ html body .bodyWrap #page2 .page2Wrap .selectColor > div .right input {
   line-height: 30px;
   border: 1px solid #bbb;
 }
-html body .bodyWrap #page2 .page2Wrap .selectColor > div .right input {
+html body .bodyWrap #page2 .page2Wrap .qty > div .right input {
   border-left: none;
   border-right: none;
   width: 40px;
   border-radius: 0px;
 }
-html body .bodyWrap #page2 .page2Wrap .selectColor > div .right span {
+html body .bodyWrap #page2 .page2Wrap .qty > div .right span {
   cursor: pointer;
 }
-html body .bodyWrap #page2 .page2Wrap .selectColor > div .right .dec {
+html body .bodyWrap #page2 .page2Wrap .qty > div .right .dec {
   border-radius: 3px 0 0 3px;
 }
-html body .bodyWrap #page2 .page2Wrap .selectColor > div .right .plus {
+html body .bodyWrap #page2 .page2Wrap .qty > div .right .plus {
   border-radius: 0 3px 3px 0;
 }
 html body .bodyWrap #page2 .page2Wrap .total {
