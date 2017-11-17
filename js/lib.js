@@ -171,6 +171,25 @@ function regForm() {
         });
         return false;
     }
+    //Todo  除了新加坡
+     if(true){
+         if(!$("#form_province").val()){
+             layer.msg('Please select your province', {
+                 offset: 't',
+                 anim: 6,
+                 skin:"layerTips"
+             });
+             return false;
+         }
+         if(!$("#form_city").val()){
+             layer.msg('Please select your city', {
+                 offset: 't',
+                 anim: 6,
+                 skin:"layerTips"
+             });
+             return false;
+         }
+     }
     return true;
 
 

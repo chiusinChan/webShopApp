@@ -139,14 +139,34 @@ $(function () {
 
     })
     //选颜色
-    $("#colorUl>li").on("click", function () {
+    $(".colorUls>li").on("click", function () {
         $(this).siblings().removeClass("selectedColor").end().addClass("selectedColor");
         $("#page2 .priceAndColor.color").text($(this).html());
         $(".picTitle img").attr("src", $(this).attr("data-src"))
     })
+    //选size
+    $(".sizeUls>li").on("click", function () {
+        $(this).siblings().removeClass("selectedColor").end().addClass("selectedColor");
+    })
+
+    // 加购
+  $("#addButton").on("click",function () {
+      $("#addButton").hide();
+      $("#addContent").show();
+      $("#totalPrice").html(+$("#secondPrice").html()+(+$("#totalPrice").html()));
+  })
+    //省市联动
+    $("#form_province").on("change",function () {
+        $("#form_city").val(0);
+    })
 
 
 
+
+
+
+
+//跳转的
     $("#page1 .bottomBuy").on("click", function () {
         window.location.hash = "cart";
         $("#page1").hide();
