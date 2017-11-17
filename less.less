@@ -411,7 +411,7 @@ html {
           top: 60px;
           bottom: 50px;
           overflow: auto;
-          .picTitle{
+          .picTitle,.gift_picTitle{
             border-bottom: 1px solid #dcdcdc;
             margin-top: 10px;
             position: relative;
@@ -462,14 +462,14 @@ html {
           .returnAndDelivery{
             overflow: hidden;
             //margin-top: 10px;
-            border-bottom: 1px solid #dcdcdc;
+            //border-bottom: 1px solid #dcdcdc;
 
-            >div{
-              margin-top: 50px;
-              text-indent:0.5em;
-              margin-bottom: 5px;
-              font-size: 20px;
-            }
+            //>div{
+            //  margin-top: 50px;
+            //  text-indent:0.5em;
+            //  margin-bottom: 5px;
+            //  font-size: 20px;
+            //}
             .card-footer{
               padding:0 12px;
               min-height: 44px;
@@ -511,17 +511,31 @@ html {
           }
 
           .selectColorFir,.selectColorSec {
-            padding: 15px;
+            padding: 10px;
             padding-bottom: 5px;
             border-bottom: none;
+            .cartTitle {
+              overflow: hidden;
+              border-bottom: 1px solid #dcdcdc;
+              margin-bottom: 5px;
+              >div{
+               float: left;
+               font-size: 20px;
+               line-height: 32px;
+               margin-top: 3px;
+             }
+
+            }
 
             ul{
               width: 100%;
               overflow: hidden;
-              margin-bottom: 60px;
+              margin-bottom: 20px;
               li{
+                 min-width: 50px;
                 font-size: 18px;
                 float: left;
+                text-align: center;
                 cursor: pointer;
                 margin-left:25px;
                 background-color: #dcdcdc;
@@ -537,20 +551,18 @@ html {
                 border-radius: 3px;
               }
             }
-            >div {
-              overflow: hidden;
-              .left {
-                float: left;
-                font-size: 20px;
-                line-height: 32px;
-                margin-top: 3px;
 
-              }
-            }
 
           }
           .bottomLine{
             border-bottom: 1px solid #dcdcdc;
+
+          }
+
+          .gift1{
+            .picTitle{
+              border-bottom:none;
+            }
 
           }
           .qty {

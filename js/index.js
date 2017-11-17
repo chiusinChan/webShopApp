@@ -132,6 +132,7 @@ $(function () {
             $("#goodsNum").val(1);
 
         } else {
+            //正常情况 和买一送一
             $("#totalPrice").text($("#goodsNum").val() * 99);
 
         }
