@@ -45,7 +45,56 @@ div{
 
 }
 
+.layui-layer-shade{
+  margin:auto;
+  right: 0;
+  bottom: 0;
+}
 
+.modalComment{
+  width: 90%;
+  .clearfix{
+    margin-bottom: 5px;
+    overflow: hidden;
+    width: 100%;
+    >span{
+      float: left;
+      line-height: 30px;
+      width: 30%;
+
+    }
+    >div{
+      float: left;
+      width: 70%;
+      input{
+        box-sizing: border-box;
+        width: 100%;
+        border:1px solid #ccc;
+        height: 30px;
+        appearance:none;
+      }
+      >div{
+        height: 30px;
+        img{
+          height: 30px;
+        }
+      }
+    }
+
+  }
+  .button{
+    width: 100%;
+    border-radius: 4px;
+    background-color: red;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .layui-layer-content{
+    padding: 15px;
+  }
+}
 
 
 html, body {
@@ -160,7 +209,7 @@ html {
         #tabBar[data-fixed="fixed"] {
           position: fixed;
           -webkit-transform: translate3d(0, 0, 0);
-
+          z-index:11;
           width: 100%;
           left: 50%;
           top: 0;
@@ -169,6 +218,7 @@ html {
           overflow: hidden;
 
         }
+
 
 
         .aboutMoney {

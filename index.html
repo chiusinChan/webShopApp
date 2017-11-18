@@ -10,6 +10,7 @@
     <!--<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">-->
     <link href="./node_modules/swiper/dist/css/swiper.min.css" rel="stylesheet">
     <link rel="stylesheet/less" type="text/css" href="./less.less"/>
+    <link rel="stylesheet" href="node_modules/raty-js/lib/jquery.raty.css">
     <!--<link rel="stylesheet" href="./less.css">-->
 </head>
 <body>
@@ -188,7 +189,7 @@
                     </ul>
                 </div>
                 <div class="writeReview">
-                    <span>
+                    <span id="writeReview">
                         Write Review
                     </span>
                 </div>
@@ -618,12 +619,51 @@
 
 </div>
 
+<div style="height: 0px; overflow: hidden">
+    <div id="modalComment">
+        <div class="clearfix">
+            <span><span style="color: red;">*</span>FullName </span>
+            <div>
+                <input type="text">
+            </div>
+        </div>
+        <div class="clearfix">
+            <span><span style="color: red;">*</span>Phone</span>
+            <div>
+                <input type="text">
+            </div>
+        </div>
+        <div class="clearfix">
+            <span>Email</span>
+            <div>
+                <input type="text">
+            </div>
+        </div>
+        <div class="clearfix">
+            <span>Rating</span>
+            <div>
+                <div id="rating">
 
+                </div>
+            </div>
+        </div>
+        <div class="clearfix">
+            <span>Comment</span>
+            <div>
+                <input type="text">
+            </div>
+        </div>
+        <div class="button">
+            Confirm
+        </div>
+    </div>
+</div>
 </body>
 <script src="node_modules/amfe-flexible/index.js"></script>
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/swiper/dist/js/swiper.min.js"></script>
 <script src="node_modules/less/dist/less.min.js"></script>
+<script src="node_modules/raty-js/lib/jquery.raty.js"></script>
 <script src="layer/layer.js"></script>
 <script src="js/lib.js"></script>
 <script src="js/scroll.js"></script>

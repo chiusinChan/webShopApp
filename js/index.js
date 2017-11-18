@@ -81,8 +81,12 @@ $(function () {
         speed: 40, //数值越大，速度越慢
         rowHeight: 56 //li的高度
     });
-    $(".list_lh li:even").css("background", "#F0F2F3");
     //评论滚动init
+    $(".list_lh li:even").css("background", "#F0F2F3");
+
+    $('#rating').raty();
+
+
 
 
     $("#page2 .title span").on("click", function () {
@@ -105,6 +109,14 @@ $(function () {
     })
     $("#page4 .title span").on("click",function () {
        history.go(-1);
+    })
+    $("#writeReview").on("click",function () {
+        layer.open({
+            type: 1,
+            title:"Comment",
+            skin:"modalComment",
+            content: $('#modalComment') //这里content是一个DOM，注意：最好该元素要存放在body最外层，否则可能被其它的相对元素所影响
+        });
     })
 
 

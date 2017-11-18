@@ -12,6 +12,7 @@
     "amfe-flexible": "^2.2.1",
     "jquery": "^3.2.1",
     "less": "^2.7.3",
+    "raty-js": "^2.8.0",
     "swiper": "^3.4.2"
   }
 }
